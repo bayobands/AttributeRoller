@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attribute Roller</title>
-    <script src="main.js"></scriptsrc></script>
-</head>
-<body>
-    
-</body>
+    <title>Anime Attribute Roller</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Anime Attribute Roller</h1>
+
+      <div class="char-selector">
+        <p>Select your Fighter (click an image):</p>
+        <div class="char-buttons">
+          <img
+            src="Images/Image 2.png"
+            alt="Naruto"
+            onclick="selectCharacter('Naruto')"
+            data-name="Naruto"
+          >
+          <img
+            src="Images/Image 1.png"
+            alt="Son Goku"
+            onclick="selectCharacter('Son Goku')"
+            data-name="Son Goku"
+          >
+          <img
+            src="Images/Image 3.png"
+            alt="Luffy"
+            onclick="selectCharacter('Luffy')"
+            data-name="Luffy"
+          >
+          <img
+            src="Images/Image 4.png"
+            alt="Tanjiro"
+            onclick="selectCharacter('Tanjiro')"
+            data-name="Tanjiro"
+          >
+        </div>
+
+        <div class="name-input">
+          <label for="player-name">Custom name:</label>
+          <input
+            id="player-name"
+            type="text"
+            placeholder="Enter a name (optional)"
+          >
+        </div>
+
+        <div class="actions">
+          <button onclick="assignPreset()" id="preset-btn">
+            Assign Preset
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="char-name">Character Name</h2>
+
+        <div class="image-frame">
+          <img
+            id="char-img"
+            src="https://via.placeholder.com/300?text=Select+Character"
+            alt="Character Image"
+          >
+        </div>
+
+        <div class="stats-container" id="stats-output">
+          <p>Click "Roll Stats" to begin!</p>
+        </div>
+
+        <button id="roll-btn" class="roll-btn" onclick="triggerRoll()">
+          ROLL STATS
+        </button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>

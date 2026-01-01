@@ -1,0 +1,147 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.char-selector {
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #f39c12;
+  border-color: #f39c12;
+  color: black;
+}
+
+/* Character thumbnails */
+.char-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+.char-buttons img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.char-buttons img:hover {
+  transform: scale(1.05);
+}
+.char-buttons img.selected {
+  border-color: #f39c12;
+  transform: scale(1.07);
+}
+
+.name-input {
+  margin-top: 10px;
+}
+.name-input input {
+  padding: 6px;
+  width: 70%;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background: #222;
+  color: white;
+}
+
+.actions button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #2980b9;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid #f39c12;
+}
+
+.image-frame {
+  width: 100%;
+  height: 300px;
+  background-color: #111;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.stat-box {
+  background: #444;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-label {
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.roll-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.roll-btn:hover {
+  background-color: #c0392b;
+}
