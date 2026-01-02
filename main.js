@@ -2,7 +2,7 @@ const defaultAttributeScores = [15, 14, 13, 12, 10, 8];
 
 // Fisher-Yates algorithm for randomly sorting an array
 function shuffleArray(targetArray) {
-    const shuffled = Array.from(targetArray); // Creates a copy to avoid mutating the original array
+  const shuffled = Array.from(targetArray); // Creates a copy to avoid mutating the original array
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1)); // Fixed double Math.floor
     const temp = shuffled[i];
@@ -59,7 +59,7 @@ function diceRoller(times, sides) {
     results.push(Math.floor(Math.random() * sides) + 1); // Roll a single dice
   }
   return results;
-} 
+}
 
 // Function to sum elements of an array
 function sumArrayElements(array) {

@@ -1,0 +1,6 @@
+# build output
+/dist
+
+# Node/Deno cache
+node_modules
+.deno
