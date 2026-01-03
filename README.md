@@ -8,4 +8,4 @@ Pick your favorite anime character and generate randomized RPG-style stats for t
 - HTML, CSS, JavaScript
 
 ## Play Now 🎮
-[Launch the game](https://bayobands.github.io/AttributeRoller/)
+[Character Randomizer](https://bayobands.github.io/AttributeRoller/)
