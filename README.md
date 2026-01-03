@@ -1,4 +1,4 @@
-# Anime Attribute Randomizer
+# Anime Character Randomizer
 
 Pick your favorite anime character and generate randomized RPG-style stats for them.
 
